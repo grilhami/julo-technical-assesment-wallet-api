@@ -22,7 +22,6 @@ export default class APIV1 implements V1 {
 
 		// Initiate all controllers
 		this.initController(this._c);
-
 	}
 
 	/**
