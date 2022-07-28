@@ -1,9 +1,5 @@
-import express, {Router} from 'express';
-
-interface IController {
-    path: string;
-    router: Router;
-}
+import express from 'express';
+import { IController } from '../../shared/interfaces'
 
 interface V1 {
     _c: IController[];
