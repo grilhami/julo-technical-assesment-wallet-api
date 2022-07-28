@@ -6,7 +6,8 @@
   "scripts": {
     "migrate": "npx prisma migrate dev",
     "generate": "npx prisma generate",
-    "staart": "echo start"
+    "seed": "npx ts-node ./src/database/scripts/seed.ts",
+    "start": "npx ts-node ./src/server.ts"
   },
   "keywords": [],
   "author": "",

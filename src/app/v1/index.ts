@@ -1,5 +1,6 @@
 import express from 'express';
 import { IController } from '../../shared/interfaces'
+import WalletController from "./wallets/wallet_controller"
 
 interface V1 {
     _c: IController[];
@@ -12,7 +13,9 @@ export default class APIV1 implements V1 {
 	router = express.Router();
 
 	// Arrays of controllers
-	_c = [];
+	_c = [
+		new WalletController()
+	];
 
 	constructor() {
 
