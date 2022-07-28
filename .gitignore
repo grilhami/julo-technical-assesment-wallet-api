@@ -39,3 +39,7 @@ dist/**/*
 
 # ignore yarn.lock
 yarn.lock
+
+# Ignore sqlite db
+src/database/prisma/*.db
+src/database/prisma/*.db-journal
