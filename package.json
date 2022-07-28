@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "migrate": "npx prisma migrate dev",
+    "generate": "npx prisma generate",
     "staart": "echo start"
 
   },

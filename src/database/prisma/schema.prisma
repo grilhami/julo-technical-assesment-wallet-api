@@ -10,4 +10,14 @@ datasource db {
 model User {
   customer_xid  String @id
   customer_name String
+  token String?
+}
+
+model Wallet {
+  id String @id
+  owned_by String
+  status String
+  enabled_at String?
+  disabled_at String?
+  balance Int
 }
